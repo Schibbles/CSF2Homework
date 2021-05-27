@@ -75,6 +75,15 @@ namespace TesterProgram
 
             CreditCardAccount cred2 = new CreditCardAccount(789451, cust2, 4300, false, 2.8m);
             Console.WriteLine(cred2);
+
+            Book bk1 = new Book();
+            bk1.Title = "The Fire Within";
+            bk1.Author = "Chris d'Lacy";
+            bk1.NumberOfPages = 340;
+            Console.WriteLine(bk1);
+
+            Book bk2 = new Book("Icefire", "Chris d'Lacy", 421);
+            Console.WriteLine(bk2);
         }
     }
 }
