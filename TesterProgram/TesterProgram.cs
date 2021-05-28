@@ -113,7 +113,7 @@ namespace TesterProgram
             Song song2 = new Song("Tom MacDonald", "I Don't Drink", 252);
             Console.WriteLine(song2);
 
-            Song[] songs = new Song[2];
+            Song[] songs = new Song[2];//created an array to use below with Artist
             songs[0] = song1;
             songs[1] = song2;
 
@@ -127,6 +127,21 @@ namespace TesterProgram
 
             Artist a2 = new Artist(songs, "Gravestones", "Rap");
             Console.WriteLine(a2);
+
+            Console.WriteLine("\n\n----MotorHome Info----\n\n");
+
+            MotorHome m1 = new MotorHome("Thor", "Challenger 37FH", 2022, 24000F, 1);
+            Console.WriteLine(m1);
+
+            MotorHome m2 = new MotorHome();
+            m2.Make = "This is";
+            m2.Model = "a motorhome";
+            m2.Year = 2018;
+            m2.Weight = 20000F;
+            m2.NumberOfBeds = 17;
+            Console.WriteLine(m2);
+
+            Console.WriteLine("\n\n----Truck Info----\n\n");
         }
     }
 }
