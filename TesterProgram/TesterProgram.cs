@@ -101,6 +101,17 @@ namespace TesterProgram
 
             Library lib2 = new Library(books, "World's Biggest Library",  "123 Rainbow Road", "Pevely", "MO", "98752");
             Console.WriteLine(lib2);
+
+            Console.WriteLine("\n\n----Song Info----\n\n");
+
+            Song song1 = new Song();
+            song1.Artist = "Tom MacDonald";
+            song1.Title = "I Hate Hip-Hop";
+            song1.Length = 245;
+            Console.WriteLine(song1);
+
+            Song song2 = new Song("Tom MacDonald", "I Don't Drink", 252);
+            Console.WriteLine(song2);
         }
     }
 }
