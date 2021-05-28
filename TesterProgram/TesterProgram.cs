@@ -76,6 +76,8 @@ namespace TesterProgram
             CreditCardAccount cred2 = new CreditCardAccount(789451, cust2, 4300, false, 2.8m);
             Console.WriteLine(cred2);
 
+
+            Console.WriteLine("\n\n----Book Info----\n\n");
             Book bk1 = new Book();
             bk1.Title = "The Fire Within";
             bk1.Author = "Chris d'Lacy";
@@ -84,6 +86,21 @@ namespace TesterProgram
 
             Book bk2 = new Book("Icefire", "Chris d'Lacy", 421);
             Console.WriteLine(bk2);
+
+            List<Book> books = new List<Book> { bk1, bk2 };//Created a List of books to use in Library
+
+            Console.WriteLine("\n\n----Library Info----\n\n");
+            Library lib1 = new Library();
+            lib1.LibraryName = "Schibble's Books";
+            lib1.Inventory = books;
+            lib1.StreetAddress = "123 Whichever Drive";
+            lib1.City = "Arnold";
+            lib1.State = "MO";
+            lib1.Zip = "63010";
+            Console.WriteLine(lib1);
+
+            Library lib2 = new Library(books, "World's Biggest Library",  "123 Rainbow Road", "Pevely", "MO", "98752");
+            Console.WriteLine(lib2);
         }
     }
 }

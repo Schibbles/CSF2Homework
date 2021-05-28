@@ -29,7 +29,7 @@ namespace ClassesLibrary
         {
             return string.Format("Title: {0}\n" +
                 "Author: {1}\n" +
-                "Number of Pages: {3}",
+                "Number of Pages: {2}",
                 Title, Author, NumberOfPages);
         }
     }
