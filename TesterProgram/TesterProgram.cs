@@ -112,6 +112,21 @@ namespace TesterProgram
 
             Song song2 = new Song("Tom MacDonald", "I Don't Drink", 252);
             Console.WriteLine(song2);
+
+            Song[] songs = new Song[2];
+            songs[0] = song1;
+            songs[1] = song2;
+
+            Console.WriteLine("\n\n----Artist Info----\n\n");
+
+            Artist a1 = new Artist();
+            a1.Songs = songs;
+            a1.AlbumTitle = "Flowers for the Dead";
+            a1.Genre = "Rap";
+            Console.WriteLine(a1);
+
+            Artist a2 = new Artist(songs, "Gravestones", "Rap");
+            Console.WriteLine(a2);
         }
     }
 }
