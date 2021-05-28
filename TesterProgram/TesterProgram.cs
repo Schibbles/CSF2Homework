@@ -142,6 +142,17 @@ namespace TesterProgram
             Console.WriteLine(m2);
 
             Console.WriteLine("\n\n----Truck Info----\n\n");
+
+            Truck t1 = new Truck("Chevrolet", "Colorado", 2012, 3400F, 1285F);
+            Console.WriteLine(t1);
+
+            Truck t2 = new Truck();
+            t2.Make = "Ford";
+            t2.Model = "F-350";
+            t2.Year = 2018;
+            t2.Weight = 5876F;
+            t2.LoadCapacity = 3761F;
+            Console.WriteLine(t2);
         }
     }
 }
